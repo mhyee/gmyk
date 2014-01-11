@@ -4,23 +4,14 @@
 \usepackage[T1]{fontenc}
 \usepackage{ae,aecompl}
 \usepackage{pgfpages}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{shapes,backgrounds}
 
 %\setbeameroption{show notes on second screen}
 %\setbeameroption{show notes on second screen=bottom}
 
-\usetheme{Rochester}
-
-\setbeamertemplate{footline}
-{%
-  \hbox{%
-    \begin{beamercolorbox}[wd=0.9\paperwidth,ht=2.25ex,dp=1ex,center]{section in head/foot}%
-      \insertnavigation{0.9\paperwidth}
-    \end{beamercolorbox}%
-    \begin{beamercolorbox}[wd=0.1\paperwidth,ht=2.25ex,dp=1ex,right]{section in head/foot}%
-      \insertframenumber{} / \insertpresentationendpage\hspace*{2ex}
-    \end{beamercolorbox}%
-  }%
-}
+\usetheme{default}
 
 \title{Graduate School}
 \subtitle{What I Wish I Knew in 3A}
@@ -32,49 +23,59 @@
 
 \maketitle
 
-\AtBeginSection[]
-{%
-  \begin{frame}
-    \frametitle{Outline}
-    \tableofcontents[currentsection]
-  \end{frame}
-}
-
 \section{Introduction}
 \begin{frame}
   \frametitle{What This Presentation Is About}
   \begin{itemize}
       \item What I wish I knew in 3A
       \item What I learned since 3A
-      \item For computer science and software engineering students
-        \begin{itemize}
-          \item Somewhat applicable for math, science, and engineering
-          \item Probably less helpful for other fields
-        \end{itemize}
   \end{itemize}
+  \begin{center}
+    \begin{tikzpicture}
+      \draw (0,0.7) ellipse (2cm and 1cm) node[align=center]
+        {\textbf{\footnotesize Most applicable}\\
+        {\footnotesize computer science,}\\
+        {\footnotesize software engineering}};
+      \draw (0,0) ellipse (3.5cm and 2cm) node[below=0.5cm, align=center]
+        {\textbf{\footnotesize Semi-applicable}\\
+        {\footnotesize other engineering, math, science}};
+    \end{tikzpicture}
+  \end{center}
 \end{frame}
 
 \begin{frame}
   \frametitle{My Experiences}
-  \begin{itemize}
-      \item 4B Software Engineering, class of 2014
-      \item Research experiences
-        \begin{itemize}
-            \item Co-op, URA, FYDP
-            \item Applied to graduate schools in Canada and USA
-        \end{itemize}
-      \item Industry experiences
-        \begin{itemize}
-          \item Telecommunications, web development startup
-          \item Most recently: Visual C++ compiler at Microsoft
-        \end{itemize}
-  \end{itemize}
+  \begin{columns}[c]
+    \column{0.5\linewidth}
+    Research experiences:
+    \begin{itemize}
+      \item Co-op, URA, FYDP
+      \item Applied to graduate schools in Canada and USA
+    \end{itemize}
+    \column{0.4\linewidth}
+    \includegraphics[width=\linewidth]{images/uw-logo.png}
+  \end{columns}
 \end{frame}
 \note[itemize]
 {%
   \item Caveat: I'm not a graduate student
+  \item I'm a 4B Software Engineering student (undergrad, class of 2014)
   \item But I have some research and some industry experience
 }
+
+\begin{frame}
+  \frametitle{My Experiences}
+  \begin{columns}[c]
+    \column{0.5\linewidth}
+    Industry experiences:
+    \begin{itemize}
+      \item Telecommunications, web development startup
+      \item Most recently: Visual C++ compiler at Microsoft
+    \end{itemize}
+    \column{0.4\linewidth}
+    \includegraphics[width=\linewidth]{images/vs-logo.png}
+  \end{columns}
+\end{frame}
 
 \section{Explaining Graduate School}
 \begin{frame}
@@ -92,11 +93,11 @@
     \item Examples: MMath, MASc, PhD
     \item
       \href{http://matt.might.net/articles/phd-school-in-pictures/}{%
-        \color{blue}{Matt Might's illustrated guide to a Ph.D.}
+        \color{blue}{See also Matt Might's illustrated guide to a Ph.D.}
       }
   \end{itemize}
   \vspace{2em}
-  \pause After this point, ``graduate school'' refers to \alert{research}
+  After this point, ``graduate school'' refers to \alert{research}.
 \end{frame}
 \note[itemize]
 {%
@@ -104,19 +105,22 @@
   \item Note that at Waterloo, MMath is used for both course and thesis master's
         degrees
   \item In the US, ``master's'' typically means course-based
+  \item Sometimes a US master's is earned en-route to a PhD
 }
 
 \section{Reasons for Graduate School}
 \begin{frame}
   \frametitle{Reasons for Graduate School}
   \href{http://pgbovine.net/why-pursue-PhD.htm}{%
-    \color{blue}{From Philip Guo: trade money for freedom}
+    \color{blue}{Philip Guo offers three practical reasons:}
   }
   \begin{itemize}
     \item Make a name for yourself
     \item Fail in a safe environment
     \item Choose from more jobs
   \end{itemize}
+  \vspace{2em}
+  In other words, ``trade money for freedom.''
 \end{frame}
 \note[itemize]
 {%
@@ -137,7 +141,7 @@
   \item Come up with an idea, implement or test it, then write papers and give
         presentations
   \item ``On your own,'' but you get mentoring from peers and professors
-  \item Startups are another way to do this
+  \item Note: startups are another way to do this
 }
 
 \begin{frame}
@@ -177,17 +181,23 @@
 
 \begin{frame}
   \frametitle{Reasons Against Graduate School}
+  You might not want to consider graduate school if you:
+  \vspace{2em}
+
   \begin{itemize}
-    \item Like working in industry
-    \item Lower salary
-    \item Might not increase starting salary in industry
+    \item like working in industry
+    \item find it important to make a good salary now
   \end{itemize}
+  \vspace{2em}
+
+  Graduate school might not result in a higher salary later, either.
 \end{frame}
 \note[itemize]
 {%
   \item Like working in industry or don't like research
   \item Salary can be 3 to 4 times lower
-  \item Graduate degree might be useless, depending on position and company
+  \item Some companies may not care about graduate degrees, depending on the
+        position
   \item Even if it does increase starting salary, it's offset by the time
         investment
 }
