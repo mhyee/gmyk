@@ -8,6 +8,7 @@
 \usepackage{tikz}
 \usetikzlibrary{shapes,backgrounds}
 
+%\setbeameroption{show only notes}
 %\setbeameroption{show notes on second screen}
 %\setbeameroption{show notes on second screen=bottom}
 
@@ -22,6 +23,11 @@
 \begin{document}
 
 \maketitle
+\note[itemize]{%
+  \item Introduce myself and the presentation
+  \item Q \& A session at the end with professors
+  \item Slides are online, with some extra links at the end
+}
 
 \section{Introduction}
 \begin{frame}
@@ -30,18 +36,25 @@
       \item What I wish I knew in 3A
       \item What I learned since 3A
   \end{itemize}
+  \vspace{1em}
   \begin{center}
     \begin{tikzpicture}
-      \draw (0,0.7) ellipse (2cm and 1cm) node[align=center]
+      \draw (0,0.7) ellipse (2.5cm and 1cm) node[align=center]
         {\textbf{\footnotesize Most applicable}\\
         {\footnotesize computer science,}\\
         {\footnotesize software engineering}};
-      \draw (0,0) ellipse (3.5cm and 2cm) node[below=0.5cm, align=center]
+      \draw (0,0) ellipse (4cm and 2cm) node[below=0.5cm, align=center]
         {\textbf{\footnotesize Semi-applicable}\\
         {\footnotesize other engineering, math, science}};
     \end{tikzpicture}
   \end{center}
 \end{frame}
+\note[itemize]{%
+  \item This is the presentation I wish I had in 3A
+  \item I knew very little about grad school
+  \item Learned on my own, and now sharing my knowledge
+  \item This presentation is less applicable for other fields
+}
 
 \begin{frame}
   \frametitle{My Experiences}
@@ -56,11 +69,12 @@
     \includegraphics[width=\linewidth]{images/uw-logo.png}
   \end{columns}
 \end{frame}
-\note[itemize]
-{%
+\note[itemize]{%
   \item Caveat: I'm not a graduate student
   \item I'm a 4B Software Engineering student (undergrad, class of 2014)
-  \item But I have some research and some industry experience
+  \item But I have some research experience
+  \item I've done research co-op, URA, and FYDP
+  \item Just finished applying to grad schools in Canada/US, including Waterloo
 }
 
 \begin{frame}
@@ -76,6 +90,12 @@
     \includegraphics[width=\linewidth]{images/vs-logo.png}
   \end{columns}
 \end{frame}
+\note[itemize]{%
+  \item Also have industry experience
+  \item Worked in telecom, two terms in a Rails startup with only two other devs
+  \item Two terms with VS at Microsoft, most recently on their C++ compiler
+  \item I think I have a pretty good idea of both sides
+}
 
 \section{Explaining Graduate School}
 \begin{frame}
@@ -85,6 +105,13 @@
     \item Examples: law school, med school, MBA, MMath, MEng
   \end{itemize}
 \end{frame}
+\note[itemize]{%
+  \item Definition: school after you have your bachelor's degree
+  \item Need to clarify before going further: two kinds of grad school
+  \item Course-based degree: you pay tuition and take courses
+  \item You are a consumer of knowledge
+  \item Examples: law school, med school, MBA, MMath (UW CS), MEng (UW ECE)
+}
 
 \begin{frame}
   \frametitle{Research-based Degree}
@@ -99,13 +126,15 @@
   \vspace{2em}
   After this point, ``graduate school'' refers to \alert{research}.
 \end{frame}
-\note[itemize]
-{%
-  \item Matt Might is a professor at the University of Utah
+\note[itemize]{%
+  \item Research-based degree: you are paid a salary to do research
+  \item You are a producer of knowledge
+  \item Matt Might (prof at University of Utah) has a nice little comic
+  \item Examples: MMath (UW CS), MASc (UW ECE), PhD
   \item Note that at Waterloo, MMath is used for both course and thesis master's
         degrees
   \item In the US, ``master's'' typically means course-based
-  \item Sometimes a US master's is earned en-route to a PhD
+  \item But sometimes a US master's is earned en-route to a PhD
 }
 
 \section{Reasons for Graduate School}
@@ -122,11 +151,14 @@
   \vspace{2em}
   In other words, ``trade money for freedom.''
 \end{frame}
-\note[itemize]
-{%
+\note[itemize]{%
   \item There are many different reasons
   \item Many of them can be personal
-  \item Philip Guo (professor at University of Rochester) offers three practical reasons
+  \item Philip Guo (professor at University of Rochester) offers three practical
+        reasons
+  \item Make a name for yourself, fail in a safe environment, choose from more
+        jobs
+  \item In other words, ``trade money for freedom''
 }
 
 \begin{frame}
@@ -136,10 +168,11 @@
     \item Entire process from start to finish, on your own
   \end{itemize}
 \end{frame}
-\note[itemize]
-{%
+\note[itemize]{%
+  \item Formulate, execute, and sell your ideas
   \item Come up with an idea, implement or test it, then write papers and give
         presentations
+  \item It's your work
   \item ``On your own,'' but you get mentoring from peers and professors
   \item Note: startups are another way to do this
 }
@@ -152,9 +185,11 @@
     \item Expected to fail repeatedly, without hurting career
   \end{itemize}
 \end{frame}
-\note[itemize]
-{%
+\note[itemize]{%
+  \item Grad school is uncertain and challenging
+  \item There will be a lot of failure (ideas shot down, papers rejected, etc.)
   \item ``What doesn't kill you makes you stronger''
+  \item Grit, tenacity, and perseverance
   \item These are good skills to have in any job
   \item In other jobs, failure may result in consequences (getting fired, not
         getting promoted, losing your startup, etc.)
@@ -170,11 +205,16 @@
         \item Corporate research, academic research, teaching
       \end{itemize}
   \end{itemize}
+  \vspace{2em}
+  Trade money for freedom.
 \end{frame}
-\note[itemize]
-{%
+\note[itemize]{%
+  \item We are very employable after graduation
   \item Many of us get full-time offers by our last co-op term
-  \item New opportunities are also different
+  \item And if you don't have an offer, you still have job experience and
+        interview skills
+  \item But a PhD opens more doors for your career
+  \item New opportunities are also different, and have more intellectual freedom
   \item Caveat: getting out of touch after you get your PhD
   \item Can maintain skills with internships
 }
@@ -192,14 +232,17 @@
 
   Graduate school might not result in a higher salary later, either.
 \end{frame}
-\note[itemize]
-{%
-  \item Like working in industry or don't like research
-  \item Salary can be 3 to 4 times lower
-  \item Some companies may not care about graduate degrees, depending on the
-        position
-  \item Even if it does increase starting salary, it's offset by the time
-        investment
+\note[itemize]{%
+  \item There are reasons to not go to graduate school
+  \item If like working in industry or don't like research
+  \item If it's important to make a good salary
+  \item Salary can be 3 to 4 times lower in grad school
+  \item Graduate degree might not result in a higher salary later
+  \item It depends on the company and position: some don't care
+  \item Another factor to consider is the time investment
+  \item A master's might be worth it: the salary bump might be able to pay off
+        the time investment
+  \item But a PhD takes too long, and will cost you money
 }
 
 \section{Applying to Graduate School}
@@ -217,10 +260,14 @@
       \end{itemize}
   \end{itemize}
 \end{frame}
-\note[itemize]
-{%
+\note[itemize]{%
+  \item Let's say you're sold and now want to apply for grad school
+  \item You'll apply 1 year before you expect to start
   \item For SE students, this will be during your last co-op
   \item Can be difficult if you're not in Waterloo
+  \item Application is a job application, so you'll need experience or potential
+  \item Publications = experience
+  \item Matt Might lists three qualities of successful PhD students
   \item Perseverance and tenacity: Getting a PhD is open-ended, uncertain, and
         full of rejection/failure
   \item Cogency: Ability to articulate ideas, in papers and presentations
@@ -236,11 +283,16 @@
       \end{itemize}
   \end{itemize}
 \end{frame}
-\note[itemize]
-{%
+\note[itemize]{%
   \item Working with different professors gives you multiple reference letters
+  \item Opportunities: co-op, URA, FYDP, SE 499
   \item May have to go ``outside JobMine'' for research co-ops
   \item URA can be difficult, since it's on top of your course work
+  \item Research experience is encouraged even if you're not sure about grad
+        school
+  \item Try something out, see if you like it, keep your options open
+  \item If you don't do it, you're closing doors
+  \item Easier to jump off the research path than jump onto it
 }
 
 \begin{frame}
@@ -258,13 +310,20 @@
     \item Industry letter
       \begin{itemize}
         \item Demonstrated qualities appropriate for research
-        \item Some universities won't accept these letters
+        \item Some programs won't accept these letters
       \end{itemize}
   \end{itemize}
 \end{frame}
-\note[itemize]
-{%
+\note[itemize]{%
+  \item 2-3 letters, depending on the program
+  \item Best letter is the strong academic letter, from a prof you worked with
+  \item Ideally you'd want 3, but 2 is OK
+  \item Course letter is from a prof whose class you took and excelled in
   \item Good courses: small class, large open-ended project
+  \item Industry letter from an employer who can write about your perseverance,
+        tenacity, and cogency
+  \item But note that some programs won't accept these letters
+  \item Waterloo ECE will, but Waterloo CS will not
 }
 
 \begin{frame}
@@ -274,8 +333,10 @@
     \item Describe your research experience and interests
   \end{itemize}
 \end{frame}
-\note[itemize]
-{%
+\note[itemize]{%
+  \item Purpose is to convince admissions committee that you are a strong
+        candidate
+  \item Mostly you'll be writing about research experience and interests
   \item Other things: why you got into research, research plans, career plans
 }
 
@@ -294,14 +355,14 @@
       \end{itemize}
   \end{itemize}
 \end{frame}
-\note[itemize]
-{%
+\note[itemize]{%
   \item The most important thing is research experience
-  \item Importance of grades or GREs depends on the school
+  \item Importance of resume, grades, and GREs depends on the school
   \item Grade cutoff at Waterloo is 78\% (CS and ECE)
   \item US schools will use GPA, so you'll have to convert
   \item Study for GREs early, before you get too specialized in CS and rusty in
         basic math
+  \item GRE scores are usually good for up to five years
 }
 
 \section{Summary}
@@ -317,27 +378,44 @@
         \item Make a name for yourself, fail in a safe environment, choose from
           more jobs
       \end{itemize}
-    \item How to apply?
+    \item How to apply to graduate school?
       \begin{itemize}
         \item Get research experience, which gets you essay material and letters
       \end{itemize}
   \end{itemize}
 \end{frame}
+\note[itemize]{%
+  \item There are three takeaway messages from this presentation
+  \item Grad school is a job to do research, to produce new knowledge
+  \item Three reasons for grad school: make a name for yourself, fail in a safe
+        environment, choose from more jobs
+  \item To apply, you'll need research experience
+  \item If you're not sure and want to keep your options open, get research
+        experience
+}
 
 \appendix
 \begin{frame}
   \frametitle{Further Reading}
   \begin{itemize}
+    \item \href{http://www.cs.cmu.edu/~harchol/gradschooltalk.pdf}{%
+      \color{blue}{Applying to Ph.D. Programs in Computer Science}
+    }
+    \item \href{http://pgbovine.net/PhD-memoir.htm}{%
+      \color{blue}{\textit{The Ph.D. Grind}}
+    }
     \item \href{http://matt.might.net/articles/}{%
       \color{blue}{Matt Might's blog}
     }
     \item \href{http://pgbovine.net/phd.htm}{%
       \color{blue}{Philip Guo's articles}
     }
-    \item \href{http://pgbovine.net/PhD-memoir.htm}{%
-      \color{blue}{\textit{The Ph.D. Grind}}
-    }
   \end{itemize}
 \end{frame}
+\note[itemize]{%
+  \item ``Applying to Ph.D. Programs'' is written by a professor at CMU
+  \item \textit{The Ph.D. Grind} is an ebook by Philip Guo about his PhD
+        experience
+}
 
 \end{document}
