@@ -48,11 +48,11 @@ elegant, natural, easy to understand.
 
 (06) Overture from The Marriage of Figaro, K. 492. (W. A. Mozart)
 
-(07a) Theme from Piano Concerto No. 26 in D Major, K. 537. (W. A. Mozart)
+(07a) Theme from Piano Concerto No. 20 in D minor, K. 466. (W. A. Mozart)
 
   Played on the fortepiano, a precursor to the modern piano.
 
-(07b) Theme from Piano Concerto No. 26 in D Major, K. 537. (W. A. Mozart)
+(07b) Theme from Piano Concerto No. 20 in D minor, K. 466. (W. A. Mozart)
 
   The same theme, but played on a modern piano. Compared to the fortepiano, the
   piano creates a gentler and richer sound that sustains.
